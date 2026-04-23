@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidadito Pollito - Concientización Ambiental</title>
+    <style>
+        :root { --verde-fuerte: #1b5e20; --verde-claro: #4caf50; --blanco: #ffffff; --gris: #f4f4f4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e8f5e9; color: #333; margin: 0; padding: 20px; line-height: 1.6; }
+        header { text-align: center; padding: 40px; background: var(--verde-fuerte); color: white; border-radius: 15px; margin-bottom: 20px; }
+        .container { max-width: 900px; margin: auto; }
+        
+        /* Estilo de los 5 Temas Principales */
+        details { background: var(--blanco); margin-bottom: 10px; padding: 15px; border-radius: 8px; border-left: 5px solid var(--verde-claro); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        summary { font-size: 1.3rem; font-weight: bold; cursor: pointer; color: var(--verde-fuerte); outline: none; }
+        
+        /* Estilo de los 10 Subtemas */
+        .subtema { margin-left: 20px; padding: 10px; border-bottom: 1px solid #ddd; }
+        .subtema h4 { color: #2e7d32; margin-bottom: 5px; }
+        
+        /* Contador */
+        .seccion-voto { text-align: center; background: var(--verde-fuerte); color: white; padding: 30px; border-radius: 15px; margin-top: 30px; }
+        button { background-color: #ffc107; color: #333; border: none; padding: 15px 30px; font-size: 1.2rem; font-weight: bold; border-radius: 50px; cursor: pointer; transition: 0.3s; }
+        button:hover { transform: scale(1.05); background-color: #ffca28; }
+        #conteo { font-size: 2rem; display: block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🐥 Proyecto Cuidadito Pollito</h1>
+        <p>Examen de Concientización Ambiental - 1er Grado</p>
+    </header>
+
+    <details>
+        <summary>1. Extinción de Especies (Mamíferos, Aves y más)</summary>
+        <div class="subtema"><h4>1.1 Pérdida de hábitat:</h4> Destrucción de hogares naturales.</div>
+        <div class="subtema"><h4>1.2 Cambio climático:</h4> Alteración de temperaturas vitales.</div>
+        <div class="subtema"><h4>1.3 Especies invasoras:</h4> Animales que llegan a desplazar a los locales.</div>
+        <div class="subtema"><h4>1.4 Contaminación genética:</h4> Cruces no naturales.</div>
+        <div class="subtema"><h4>1.5 Enfermedades:</h4> Virus que atacan poblaciones vulnerables.</div>
+        <div class="subtema"><h4>1.6 Fragmentación:</h4> Ecosistemas divididos por carreteras.</div>
+        <div class="subtema"><h4>1.7 Comercio ilegal:</h4> Venta de animales como mascotas.</div>
+        <div class="subtema"><h4>1.8 Falta de alimento:</h4> Por sobreexplotación humana.</div>
+        <div class="subtema"><h4>1.9 Acidificación de océanos:</h4> Muerte de corales y vida marina.</div>
+        <div class="subtema"><h4>1.10 Desinterés humano:</h4> La mayor causa de olvido de especies.</div>
+    </details>
+
+    <details>
+        <summary>2. Deforestación y Tala Inmoderada</summary>
+        <div class="subtema"><h4>2.1 Agricultura intensiva:</h4> Quema de selvas para sembrar.</div>
+        <div class="subtema"><h4>2.2 Ganadería:</h4> Espacios talados para pastoreo.</div>
+        <div class="subtema"><h4>2.3 Tala ilegal:</h4> Robo de madera en zonas protegidas.</div>
+        <div class="subtema"><h4>2.4 Incendios forestales:</h4> Provocados o por sequías extremas.</div>
+        <div class="subtema"><h4>2.5 Minería:</h4> Remoción de tierra y árboles para metales.</div>
+        <div class="subtema"><h4>2.6 Urbanización:</h4> Construcción de ciudades en bosques.</div>
+        <div class="subtema"><h4>2.7 Papel y celulosa:</h4> Consumo excesivo de hojas blancas.</div>
+        <div class="subtema"><h4>2.8 Aceite de palma:</h4> Destrucción de selvas tropicales.</div>
+        <div class="subtema"><h4>2.9 Erosión del suelo:</h4> Tierra que ya no sirve para crecer vida.</div>
+        <div class="subtema"><h4>2.10 Pérdida de oxígeno:</h4> Menos pulmones para el mundo.</div>
+    </details>
+
+    <details>
+        <summary>3. Pesca de Animales Ilícitos</summary>
+        <div class="subtema"><h4>3.1 Pesca de arrastre:</h4> Redes que destruyen el fondo marino.</div>
+        <div class="subtema"><h4>3.2 Captura de delfines:</h4> Redes de atún que atrapan otras especies.</div>
+        <div class="subtema"><h4>3.3 Pesca de tiburón (Aleteo):</h4> Captura solo por las aletas.</div>
+        <div class="subtema"><h4>3.4 Pesca en zonas prohibidas:</h4> No respetar santuarios.</div>
+        <div class="subtema"><h4>3.5 Uso de explosivos:</h4> Bombas para matar peces rápido.</div>
+        <div class="subtema"><h4>3.6 Especies en veda:</h4> Pescar animales en época de reproducción.</div>
+        <div class="subtema"><h4>3.7 Redes fantasma:</h4> Redes abandonadas que siguen matando.</div>
+        <div class="subtema"><h4>3.8 Comercio de especies exóticas:</h4> Caballitos de mar y corales.</div>
+        <div class="subtema"><h4>3.9 Sobrepesca:</h4> Sacar más peces de los que nacen.</div>
+        <div class="subtema"><h4>3.10 Contaminación por barcos:</h4> Aceite y basura de pesqueros.</div>
+    </details>
+
+    <details>
+        <summary>4. Cacería y Tráfico de Pieles</summary>
+        <div class="subtema"><h4>4.1 Caza furtiva:</h4> Matar animales protegidos por la ley.</div>
+        <div class="subtema"><h4>4.2 Tráfico de marfil:</h4> Matanza de elefantes por colmillos.</div>
+        <div class="subtema"><h4>4.3 Pieles exóticas:</h4> Jaguares y tigres usados para moda.</div>
+        <div class="subtema"><h4>4.4 Trofeos de caza:</h4> Matar solo por diversión o orgullo.</div>
+        <div class="subtema"><h4>4.5 Medicina tradicional falsa:</h4> Usar partes de animales sin base científica.</div>
+        <div class="subtema"><h4>4.6 Caza de subsistencia mal gestionada:</h4> Exceso de consumo local.</div>
+        <div class="subtema"><h4>4.7 Trampas crueles:</h4> Cepos que hacen sufrir al animal.</div>
+        <div class="subtema"><h4>4.8 Venenos:</h4> Control de plagas que mata animales sanos.</div>
+        <div class="subtema"><h4>4.9 Mascotas salvajes:</h4> Captura de crías matando a la madre.</div>
+        <div class="subtema"><h4>4.10 Extinción por moda:</h4> Demanda de productos de lujo.</div>
+    </details>
+
+    <details>
+        <summary>5. Contaminación por Plásticos</summary>
+        <div class="subtema"><h4>5.1 Plásticos de un solo uso:</h4> Bolsas y popotes innecesarios.</div>
+        <div class="subtema"><h4>5.2 Microplásticos:</h4> Partículas que entran en nuestra comida.</div>
+        <div class="subtema"><h4>5.3 Basura en ríos:</h4> El camino de la basura hacia el mar.</div>
+        <div class="subtema"><h4>5.4 Muerte por ingesta:</h4> Tortugas que comen bolsas (parecen medusas).</div>
+        <div class="subtema"><h4>5.5 Islas de basura:</h4> Gigantes concentraciones en el océano.</div>
+        <div class="subtema"><h4>5.6 Quema de basura:</h4> Gases tóxicos para el aire.</div>
+        <div class="subtema"><h4>5.7 Falta de reciclaje:</h4> Solo el 9% del plástico se recicla.</div>
+        <div class="subtema"><h4>5.8 Empaques excesivos:</h4> Plástico sobre plástico en el súper.</div>
+        <div class="subtema"><h4>5.9 Microesferas:</h4> En cosméticos y pastas dentales.</div>
+        <div class="subtema"><h4>5.10 Descomposición lenta:</h4> Plásticos que tardan 500 años en irse.</div>
+    </details>
+
+    <div class="seccion-voto">
+        <h2>¿Te comprometes a cuidar el planeta?</h2>
+        <button onclick="sumarVoto()">¡SÍ, ME COMPROMETO!</button>
+        <span id="conteo">0</span>
+        <p>personas han firmado este compromiso en este equipo.</p>
+    </div>
+</div>
+
+<script>
+    // Sistema de conteo local para que no falle en el examen
+    let votos = localStorage.getItem('votosPollito') || 0;
+    document.getElementById('conteo').innerText = votos;
+
+    function sumarVoto() {
+        votos++;
+        localStorage.setItem('votosPollito', votos);
+        document.getElementById('conteo').innerText = votos;
+        alert("¡Gracias por unirte a Cuidadito Pollito! 🐥🌱");
+    }
+</script>
+
+</body>
+</html>
